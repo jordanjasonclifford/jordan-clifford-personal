@@ -3,6 +3,25 @@ import React from "react";
 export default function Projects() {
   const projects = [
     {
+      title: "NBA Player Performance Analysis",
+      summary:
+        "Data analysis of NBA player performance using Python, Pandas, and Matplotlib to uncover insights and trends.",
+      links: [
+        {
+          label: "GitHub",
+          href: "https://github.com/jordanjasonclifford/nba_data_engineering",
+          target: "_blank",
+          rel: "noopener noreferrer",
+        },
+      ],
+      bullets: [
+        "Developed Python scripts using the NBA API to extract and aggregate 10+ seasons of NBA game data from all 30 teams and 60 all-stars.",
+        "Built a data pipeline using Pandas and PostgreSQL to clean, transform, and store player and team statistics.",
+        "Created Power BI dashboards analyzing Devin Booker performance vs All-Star cohorts, team outcomes, and matchup contexts.",
+        "Calculated efficiency metrics and trend splits (home/away, wins/losses, opponent) to surface player performance insights."
+      ],
+    },
+    {
       title: "Edge AI Video Analytics (Capstone)",
       summary:
         "Edge-based real-time video analytics system deployed on low-power Rockchip hardware.",
