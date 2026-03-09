@@ -9,7 +9,7 @@ import Footer from "./comps/Footer";
 import { useEffect, useState } from "react";
 
 // React Component for site analytics
-import { Analytics } from "@vercel/analytics/next" 
+import { Analytics } from "@vercel/analytics/next"; 
 
 
 function App() {
@@ -33,6 +33,7 @@ function App() {
       <Experience />
       <Projects />
       <Footer />
+      <Analytics />
     </div>
   );
 }
