@@ -8,6 +8,10 @@ import Projects from "./comps/Projects";
 import Footer from "./comps/Footer";
 import { useEffect, useState } from "react";
 
+// React Component for site analytics
+import { Analytics } from "@vercel/analytics/next" 
+
+
 function App() {
   const [scrolled, setScrolled] = useState(false);
 
