@@ -1,6 +1,7 @@
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
 import { Github, Linkedin, Mail } from "lucide-react";
+import { track } from "@vercel/analytics"; // added for tracking clicks on social icons
 
 export default function Navbar({ scrolled }) {
   const [mobileMenuIsOpen, setMobileMenuIsOpen] = useState(false);
@@ -49,6 +50,8 @@ export default function Navbar({ scrolled }) {
             <a
               href="https://github.com/jordanjasonclifford"
               target="_blank"
+              rel="noopener noreferrer"
+              onClick={() => track("Navbar GitHub Click")}
               className="p-2 bg-slate-800 rounded-lg hover:bg-slate-700 hover:text-yellow-300 transition"
             >
               <Github className="w-5 h-5" />
@@ -56,12 +59,17 @@ export default function Navbar({ scrolled }) {
             <a
               href="https://linkedin.com/in/jordan-jason-clifford"
               target="_blank"
+              rel="noopener noreferrer"
+              onClick={() => track("Navbar LinkedIn Click")}
               className="p-2 bg-slate-800 rounded-lg hover:bg-slate-700 hover:text-yellow-300 transition"
             >
               <Linkedin className="w-5 h-5" />
             </a>
             <a
               href="mailto:jordanclifford@gmail.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={() => track("Navbar Email Click")}
               className="p-2 bg-slate-800 rounded-lg hover:bg-slate-700 hover:text-yellow-300 transition"
             >
               <Mail className="w-5 h-5" />
@@ -115,6 +123,7 @@ export default function Navbar({ scrolled }) {
                 href="https://github.com/jordanjasonclifford"
                 target="_blank"
                 rel="noopener noreferrer"
+                onClick={() => track("Navbar GitHub Click")}
                 className="p-2 bg-slate-800 rounded-lg hover:bg-slate-700 hover:text-yellow-300 transition"
               >
                 <Github className="w-5 h-5" />
@@ -123,6 +132,7 @@ export default function Navbar({ scrolled }) {
                 href="https://linkedin.com/in/jordan-jason-clifford"
                 target="_blank"
                 rel="noopener noreferrer"
+                onClick={() => track("Navbar LinkedIn Click")}
                 className="p-2 bg-slate-800 rounded-lg hover:bg-slate-700 hover:text-yellow-300 transition"
               >
                 <Linkedin className="w-5 h-5" />
@@ -131,6 +141,7 @@ export default function Navbar({ scrolled }) {
                 href="mailto:jordanclifford@gmail.com"
                 target="_blank"
                 rel="noopener noreferrer"
+                onClick={() => track("Navbar Email Click")}
                 className="p-2 bg-slate-800 rounded-lg hover:bg-slate-700 hover:text-yellow-300 transition"
               >
                 <Mail className="w-5 h-5" />

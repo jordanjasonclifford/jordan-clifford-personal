@@ -1,4 +1,5 @@
 import React from "react";
+import { track } from "@vercel/analytics"; // added for tracking clicks on project links
 
 export default function Experience() {
   const experiences = [
@@ -9,13 +10,24 @@ export default function Experience() {
       date: "06/2025 – 08/2025",
       logo: "/unlv.png",
       links: [
-        { label: "Poster", href: "/unlv_poster.pdf", target: "_blank", rel: "noopener noreferrer" },
-        { label: "Presentation", href: "/unlv_presentation_at_icseng.pdf", target: "_blank", rel: "noopener noreferrer" },
+        { label: "Poster", 
+          href: "/unlv_poster.pdf", 
+          target: "_blank", 
+          rel: "noopener noreferrer", 
+          onClick: () => track("UNLV Research Poster Click") 
+        },
+        { label: "Presentation", 
+          href: "/unlv_presentation_at_icseng.pdf", 
+          target: "_blank", 
+          rel: "noopener noreferrer", 
+          onClick: () => track("UNLV Research Presentation Click") 
+        },
         {
           label: "GitHub",
           href: "https://github.com/jordanjasonclifford/Multi-Modal-Route-Optimization-with-Hybrid-Travel",
           target: "_blank",
           rel: "noopener noreferrer",
+          onClick: () => track("UNLV Research GitHub Click"),
         },
       ],
       bullets: [
@@ -42,7 +54,11 @@ export default function Experience() {
       location: "Chattanooga, TN",
       date: "05/2024 – 07/2024",
       logo: "/utc.jpg",
-      links: [{ label: "Presentation", href: "/utc_presentation.pdf", target: "_blank", rel: "noopener noreferrer" }],
+      links: [{ label: "Presentation", 
+              href: "/utc_presentation.pdf", 
+              target: "_blank", 
+              rel: "noopener noreferrer", 
+              onClick: () => track("UTC Research Presentation Click") }],
       bullets: [
         "Developed Python-based data pipelines to preprocess and filter 800+ hypothetical protein records into high-confidence biomarker candidates.",
         "Applied multi-stage computational screening (stability metrics, localization prediction, domain analysis) to rank and prioritize samples.",
@@ -101,8 +117,9 @@ export default function Experience() {
                         <a
                           key={i}
                           href={link.href}
-                          target="_blank"
-                          rel="noopener noreferrer"
+                          target={link.target}
+                          rel={link.rel}
+                          onClick={link.onClick}
                           className="inline-flex items-center gap-2 rounded-full border border-amber-400/30 px-4 py-1.5 text-xs text-amber-300 hover:bg-amber-400/10 transition"
                         >
                           {link.label}

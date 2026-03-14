@@ -1,4 +1,6 @@
 import React from "react";
+import { track } from "@vercel/analytics"; // added for tracking clicks on project links
+
 
 export default function Projects() {
   const projects = [
@@ -12,6 +14,7 @@ export default function Projects() {
           href: "https://github.com/jordanjasonclifford/nba_data_engineering",
           target: "_blank",
           rel: "noopener noreferrer",
+          onClick: () => track("NBA Project GitHub Click"),
         },
       ],
       bullets: [
@@ -31,6 +34,7 @@ export default function Projects() {
           href: "edge_presentation.pdf",
           target: "_blank",
           rel: "noopener noreferrer",
+          onClick: () => track("Edge AI Project Presentation Click"),
           
         },
         {
@@ -38,6 +42,7 @@ export default function Projects() {
           href: "https://www.youtube.com/watch?v=OxgRBRKGDXY",
           target: "_blank",
           rel: "noopener noreferrer",
+          onClick: () => track("Edge AI Project Video Click"),
         },
       ],
       bullets: [
@@ -58,7 +63,7 @@ export default function Projects() {
           href: "https://github.com/jordanjasonclifford/atlanta-crime-dataset",
           target: "_blank",
           rel: "noopener noreferrer",
-          
+          onClick: () => track("Crime Classification GitHub Click"),
         },
       ],
       bullets: [
@@ -76,6 +81,7 @@ export default function Projects() {
         {
           label: "Figma",
           href: "https://www.figma.com/proto/izmP5XirTx9rBOY9u0Aego/Untitled?node-id=1-437&p=f&t=x9NXJGJAbAHzAcaH-0&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1",
+          onClick: () => track("ASU Move-Out Figma Click"),
         },
       ],
       bullets: [
@@ -134,8 +140,9 @@ export default function Projects() {
                     <a
                       key={i}
                       href={link.href}
-                      target="_blank"
-                      rel="noopener noreferrer"
+                      target={link.target}
+                      rel={link.rel}
+                      onClick={link.onClick}
                       className="inline-flex items-center gap-2 rounded-full border border-amber-400/40 px-4 py-1.5 text-xs text-amber-200 hover:bg-amber-400/10 hover:border-amber-300/70 transition"
                     >
                       {link.label}
