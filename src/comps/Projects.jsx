@@ -7,7 +7,7 @@ export default function Projects() {
     {
       title: "NBA Player Performance Analysis",
       summary:
-        "Data analysis of NBA player performance using Python, Pandas, and Matplotlib to uncover insights and trends.",
+        "Data analysis of NBA player performance using Python, SQL, and Power BI to uncover insights and trends.",
       links: [
         {
           label: "GitHub",
