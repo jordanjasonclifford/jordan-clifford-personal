@@ -32,7 +32,7 @@ export default function Experience() {
       ],
       bullets: [
         "Engineered a hybrid travel-time prediction system integrating Google Maps API route data with supervised ML models across 24k+ multi-modal samples.",
-        "Designed and implemented reinforcement learning experiments to optimize commuter mode selection under time-of-day and location constraints.",
+        "Designed and implemented reinforcement + supervised learning experiments to optimize commuter mode selection under time-of-day and location constraints.",
         "Performed feature engineering and comparative evaluation to quantify travel-time improvements and projected emissions impact.",
         "Authored a peer-reviewed research paper for ICSEng 2025 (publication pending late 2026).",
       ],
