@@ -4,6 +4,29 @@ import { track } from "@vercel/analytics"; // added for tracking clicks on proje
 
 export default function Projects() {
   const projects = [
+
+    {
+    title: "Self-Improving AI Sales Agent",
+    summary:
+    "Voice-based AI sales agent that simulates outbound calls, analyzes how conversations went, and iteratively improves its own script over time.",
+    links: [
+      {
+      label: "GitHub",
+      href: "https://github.com/jordanjasonclifford/call_center_agent",
+      target: "_blank",
+      rel: "noopener noreferrer",
+      onClick: () => track("Sales Agent GitHub Click"),
+      },
+    ],
+    bullets: [
+    "Built a Python-based AI sales agent that runs simulated cold calls with speech-to-text and text-to-speech for a more realistic call flow.",
+    "Designed a feedback loop where each conversation is stored, reviewed, and used to refine the agent’s script for the next round.",
+    "Used an LLM analysis stage to identify weak points in the conversation, including missed objections, unclear messaging, and drop-off moments.",
+    "Structured the system so call outputs could feed directly into script optimization, making the project feel more like an experimentation pipeline than a one-off chatbot.",
+    ],
+    },
+
+
     {
       title: "NBA Player Performance Analysis",
       summary:
