@@ -1,10 +1,10 @@
 export default function Footer() {
   return (
-    <footer className="py-8 bg-[#140a07] border-t border-[#2a140f] text-center text-sm text-gray-400">
+    <footer className="py-8 bg-black border-t border-orange-300/10 text-center text-sm text-white">
       <img
-        src="/hand_sun_2.png"
-        alt="Sun"
-        className="mx-auto mb-4 h-16 w-auto opacity-90 animate-delay-100 animate-spin-slow"
+        src="/jordancliffordwebsitelogo.png"
+        alt="Jordan Clifford logo"
+        className="mx-auto mb-4 h-24 w-auto opacity-95"
       />
 
       <p className="mb-1">
@@ -18,7 +18,7 @@ export default function Footer() {
 
       <p className="mb-1">&copy; 2026 Jordan Clifford.</p>
 
-      <p className="text-xs text-gray-500">
+      <p className="text-xs text-white">
         Hero background video courtesy of Pixabay (creator: FlickrVideos)
       </p>
     </footer>

@@ -18,11 +18,6 @@ export default function Navbar({ scrolled }) {
         <div className="flex justify-between items-center h-14 sm:h-16 md:h-20">
           {/* Left: Logo / Name */}
           <div className="flex items-center space-x-1 group cursor-pointer">
-            <img
-              src="/ASU-logo.png"
-              alt=""
-              className="w-12 h-8 sm:w-18 sm:h-12"
-            />
             <span className="text-lg sm:text-xl md:text-2xl font-mono text-amber-400">
               Jordan Clifford
             </span>
