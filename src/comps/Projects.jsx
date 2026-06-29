@@ -9,6 +9,7 @@ export default function Projects() {
     title: "Self-Improving AI Sales Agent",
     summary:
     "Voice-based AI sales agent that simulates outbound calls, analyzes how conversations went, and iteratively improves its own script over time.",
+    tags: ["Python", "LLMs", "STT/TTS", "Automation", "Experimentation"],
     links: [
       {
       label: "GitHub",
@@ -31,6 +32,7 @@ export default function Projects() {
       title: "NBA Player Performance Analysis",
       summary:
         "Data analysis of NBA player performance using Python, SQL, and Power BI to uncover insights and trends.",
+      tags: ["Python", "Pandas", "PostgreSQL", "Power BI", "NBA API"],
       links: [
         {
           label: "GitHub",
@@ -51,6 +53,7 @@ export default function Projects() {
       title: "Edge AI Video Analytics (Capstone)",
       summary:
         "Edge-based real-time video analytics system deployed on low-power Rockchip hardware.",
+      tags: ["FastAPI", "ONNX", "YOLOv8", "Docker", "K3s", "Prometheus"],
       links: [
         {
           label: "Presentation",
@@ -80,6 +83,7 @@ export default function Projects() {
       title: "Crime Classification ML Pipeline (CSE ML Project)",
       summary:
         "End-to-end supervised learning pipeline to classify crime categories with reproducible milestones.",
+      tags: ["Python", "scikit-learn", "EDA", "Random Forest", "Model Evaluation"],
       links: [
         {
           label: "GitHub",
@@ -100,6 +104,7 @@ export default function Projects() {
       title: "ASU Move-Out Marketplace Prototype (HCI Project)",
       summary:
         "Figma prototype for an ASU-only marketplace supporting move-out workflows and safer meetups.",
+      tags: ["Figma", "UX Research", "Usability Testing", "A/B Testing", "HCI"],
       links: [
         {
           label: "Figma",
@@ -118,6 +123,7 @@ export default function Projects() {
       title: "DOT Graph Visualizer + Testing + CI (Java)",
       summary:
         "Java tool to parse/edit DOT graphs and export to DOT/PNG with strong test coverage and CI.",
+      tags: ["Java", "JUnit", "Maven", "Graphviz", "GitHub Actions"],
       
       bullets: [
         "Implemented node/edge creation/removal with DOT parsing and Graphviz export.",
@@ -130,6 +136,7 @@ export default function Projects() {
       title: ".NET Weather + News Service Integration",
       summary:
         ".NET application integrating multiple external services into a single workflow with robust error handling.",
+      tags: ["C#", ".NET", "APIs", "Service Clients", "Error Handling"],
       bullets: [
         "Designed and consumed service endpoints with consistent request/response parsing.",
         "Handled timeouts, missing fields, and bad responses to fail gracefully under unreliable network calls.",
@@ -155,6 +162,17 @@ export default function Projects() {
               <p className="text-amber-100/80 mb-4 leading-relaxed">
                 {p.summary}
               </p>
+
+              <div className="mb-4 flex flex-wrap gap-2">
+                {p.tags.map((tag) => (
+                  <span
+                    key={tag}
+                    className="rounded-full border border-amber-400/25 bg-[#2a140f]/60 px-2.5 py-1 text-xs text-amber-100/80"
+                  >
+                    {tag}
+                  </span>
+                ))}
+              </div>
 
               {/* Optional Links */}
               {p.links && (
