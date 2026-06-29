@@ -33,14 +33,14 @@ export default function Navbar({ scrolled }) {
           <div className="flex items-center font-mono space-x-6 lg:space-x-15">
             
             <a href="#aboutme" 
-            className="px-3 py-1.5 rounded-md bg-slate-800 text-gray-300 text-sm lg:text-base transition hover:bg-slate-700 hover:text-yellow-300"
+            className="px-3 py-1.5 rounded-md border border-orange-300/25 bg-[#3a1f18]/70 text-amber-100 text-sm lg:text-base transition hover:bg-[#5c2d14]/80 hover:border-orange-300/50 hover:text-orange-200"
              >
               About
             </a>
-            <a href="#experience" className="px-3 py-1.5 rounded-md bg-slate-800 text-gray-300 text-sm lg:text-base transition hover:bg-slate-700 hover:text-yellow-300">
+            <a href="#experience" className="px-3 py-1.5 rounded-md border border-orange-300/25 bg-[#3a1f18]/70 text-amber-100 text-sm lg:text-base transition hover:bg-[#5c2d14]/80 hover:border-orange-300/50 hover:text-orange-200">
               Experience
             </a>
-            <a href="#projects" className="px-3 py-1.5 rounded-md bg-slate-800 text-gray-300 text-sm lg:text-base transition hover:bg-slate-700 hover:text-yellow-300">
+            <a href="#projects" className="px-3 py-1.5 rounded-md border border-orange-300/25 bg-[#3a1f18]/70 text-amber-100 text-sm lg:text-base transition hover:bg-[#5c2d14]/80 hover:border-orange-300/50 hover:text-orange-200">
               Projects
             </a>
           </div>
@@ -52,7 +52,7 @@ export default function Navbar({ scrolled }) {
               target="_blank"
               rel="noopener noreferrer"
               onClick={() => track("Navbar GitHub Click")}
-              className="p-2 bg-slate-800 rounded-lg hover:bg-slate-700 hover:text-yellow-300 transition"
+              className="p-2 rounded-lg border border-orange-300/20 bg-[#3a1f18]/70 text-amber-100 hover:bg-[#5c2d14]/80 hover:border-orange-300/50 hover:text-orange-200 transition"
             >
               <Github className="w-5 h-5" />
             </a>
@@ -61,7 +61,7 @@ export default function Navbar({ scrolled }) {
               target="_blank"
               rel="noopener noreferrer"
               onClick={() => track("Navbar LinkedIn Click")}
-              className="p-2 bg-slate-800 rounded-lg hover:bg-slate-700 hover:text-yellow-300 transition"
+              className="p-2 rounded-lg border border-orange-300/20 bg-[#3a1f18]/70 text-amber-100 hover:bg-[#5c2d14]/80 hover:border-orange-300/50 hover:text-orange-200 transition"
             >
               <Linkedin className="w-5 h-5" />
             </a>
@@ -70,7 +70,7 @@ export default function Navbar({ scrolled }) {
               target="_blank"
               rel="noopener noreferrer"
               onClick={() => track("Navbar Email Click")}
-              className="p-2 bg-slate-800 rounded-lg hover:bg-slate-700 hover:text-yellow-300 transition"
+              className="p-2 rounded-lg border border-orange-300/20 bg-[#3a1f18]/70 text-amber-100 hover:bg-[#5c2d14]/80 hover:border-orange-300/50 hover:text-orange-200 transition"
             >
               <Mail className="w-5 h-5" />
             </a>
@@ -91,40 +91,40 @@ export default function Navbar({ scrolled }) {
       {/* Mobile menu */}
       {mobileMenuIsOpen && (
         <div className="md:hidden bg-slate-900/95 backdrop-blur-lg border-t border-slate-800 animate-in slide-in-from-top duration-300 font-mono">
-          <div className="px-4 py-4 sm:py-6 space-y-3 sm:space-y-7">
-            <div className="flex flex-col items-start gap-9">
+          <div className="px-5 py-5 sm:py-6 space-y-6">
+            <div className="flex flex-col items-start gap-4">
             
             <a
               href="#aboutme"
               onClick={() => setMobileMenuIsOpen(false)}
-              className="inline-flex w-fit px-3 py-2 rounded-md bg-slate-800 text-gray-300 text-sm transition hover:bg-slate-700 hover:text-yellow-300"
+              className="inline-flex w-44 px-4 py-2 rounded-md border border-orange-300/25 bg-[#3a1f18]/70 text-amber-100 text-sm transition hover:bg-[#5c2d14]/80 hover:border-orange-300/50 hover:text-orange-200"
       >
               {'>'} About
             </a>
             <a
               href="#experience"
               onClick={() => setMobileMenuIsOpen(false)}
-              className="inline-flex w-fit px-3 py-2 rounded-md bg-slate-800 text-gray-300 text-sm transition hover:bg-slate-700 hover:text-yellow-300"
+              className="inline-flex w-44 px-4 py-2 rounded-md border border-orange-300/25 bg-[#3a1f18]/70 text-amber-100 text-sm transition hover:bg-[#5c2d14]/80 hover:border-orange-300/50 hover:text-orange-200"
             >
                 {'>'} Experience
             </a>
             <a
               href="#projects"
               onClick={() => setMobileMenuIsOpen(false)}
-              className="inline-flex w-fit px-3 py-2 rounded-md bg-slate-800 text-gray-300 text-sm transition hover:bg-slate-700 hover:text-yellow-300"
+              className="inline-flex w-44 px-4 py-2 rounded-md border border-orange-300/25 bg-[#3a1f18]/70 text-amber-100 text-sm transition hover:bg-[#5c2d14]/80 hover:border-orange-300/50 hover:text-orange-200"
             >
                 {'>'} Projects
             </a>
             </div>
 
             {/* Optional: Social icons in mobile menu */}
-            <div className="flex justify-start mt-4 space-x-10">
+            <div className="flex justify-start gap-5">
               <a
                 href="https://github.com/jordanjasonclifford"
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={() => track("Navbar GitHub Click")}
-                className="p-2 bg-slate-800 rounded-lg hover:bg-slate-700 hover:text-yellow-300 transition"
+                className="p-2 rounded-lg border border-orange-300/20 bg-[#3a1f18]/70 text-amber-100 hover:bg-[#5c2d14]/80 hover:border-orange-300/50 hover:text-orange-200 transition"
               >
                 <Github className="w-5 h-5" />
               </a>
@@ -133,7 +133,7 @@ export default function Navbar({ scrolled }) {
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={() => track("Navbar LinkedIn Click")}
-                className="p-2 bg-slate-800 rounded-lg hover:bg-slate-700 hover:text-yellow-300 transition"
+                className="p-2 rounded-lg border border-orange-300/20 bg-[#3a1f18]/70 text-amber-100 hover:bg-[#5c2d14]/80 hover:border-orange-300/50 hover:text-orange-200 transition"
               >
                 <Linkedin className="w-5 h-5" />
               </a>
@@ -142,7 +142,7 @@ export default function Navbar({ scrolled }) {
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={() => track("Navbar Email Click")}
-                className="p-2 bg-slate-800 rounded-lg hover:bg-slate-700 hover:text-yellow-300 transition"
+                className="p-2 rounded-lg border border-orange-300/20 bg-[#3a1f18]/70 text-amber-100 hover:bg-[#5c2d14]/80 hover:border-orange-300/50 hover:text-orange-200 transition"
               >
                 <Mail className="w-5 h-5" />
               </a>

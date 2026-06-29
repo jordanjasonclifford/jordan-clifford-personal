@@ -10,7 +10,7 @@ export default function AboutMe() {
 
         {/* Profile Image */}
         <div className="flex justify-center md:justify-start">
-          <div className="w-69 h-85 rounded-xl border border-orange-300/40 overflow-hidden bg-orange-900/40">
+          <div className="w-69 h-85 rounded-xl border border-orange-300/40 overflow-hidden bg-orange-900/40 shadow-[0_18px_50px_rgba(0,0,0,0.25)]">
             <img
               src="/jordanprofile.png"
               alt="Jordan Clifford"

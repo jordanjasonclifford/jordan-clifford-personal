@@ -14,20 +14,20 @@ export default function Hero() {
         <source src="/gc_vid.mp4" type="video/mp4" />
       </video>
 
-      {/* Dark overlay */}
-      <div className="absolute inset-0 bg-black/35"></div>
+      {/* Warm mesa tint */}
+      <div className="absolute inset-0 bg-[#2a140f]/25"></div>
 
       {/* Hero Badge Card */}
       <div
         className="relative w-full max-w-[92vw] sm:max-w-xl md:max-w-2xl
                    text-center px-5 py-5 sm:px-8 sm:py-7 md:px-10 md:py-8
                    rounded-xl sm:rounded-2xl
-                   bg-[#1a1a1a]/90
-                   border-2 border-orange-300
-                   shadow-[0_12px_50px_rgba(0,0,0,0.7)]"
+                   bg-[#1a1a1a]/75 backdrop-blur-sm
+                   border border-orange-300/80
+                   shadow-[0_16px_60px_rgba(0,0,0,0.45)]"
       >
         {/* Inner subtle stroke */}
-        <div className="absolute inset-2 rounded-lg sm:rounded-xl border border-orange-400/20 pointer-events-none"></div>
+        <div className="absolute inset-2 rounded-lg sm:rounded-xl border border-orange-400/10 pointer-events-none"></div>
 
         <p className="text-orange-200 font-mono tracking-[0.18em] sm:tracking-widest text-[11px] sm:text-sm md:text-base mb-2 sm:mb-3 leading-snug">
           COMPUTER SCIENCE AT ARIZONA STATE UNIVERSITY

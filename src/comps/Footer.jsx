@@ -1,7 +1,6 @@
 export default function Footer() {
   return (
     <footer className="py-8 bg-[#140a07] border-t border-[#2a140f] text-center text-sm text-gray-400">
-
       <img
         src="/hand_sun_2.png"
         alt="Sun"
@@ -9,8 +8,15 @@ export default function Footer() {
       />
 
       <p className="mb-1">
-        © 2026 Jordan Clifford.
+        <a
+          href="mailto:jordanclifford@gmail.com"
+          className="text-amber-200 transition hover:text-orange-200"
+        >
+          jordanclifford@gmail.com
+        </a>
       </p>
+
+      <p className="mb-1">&copy; 2026 Jordan Clifford.</p>
 
       <p className="text-xs text-gray-500">
         Hero background video courtesy of Pixabay (creator: FlickrVideos)
