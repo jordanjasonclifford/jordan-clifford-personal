@@ -27,6 +27,35 @@ export default function Projects() {
     ],
     },
 
+    {
+      title: "Pvlseon Smart KPI Dashboard",
+      summary:
+        "Streamlit dashboard that turns uploaded business CSVs into KPI cards, trend charts, AI commentary, and exportable executive reports.",
+      tags: ["Python", "Streamlit", "Pandas", "Plotly", "Claude API", "PDF Export"],
+      links: [
+        {
+          label: "GitHub",
+          href: "https://github.com/jordanjasonclifford/smart_kpi_dashboard",
+          target: "_blank",
+          rel: "noopener noreferrer",
+          onClick: () => track("Smart KPI Dashboard GitHub Click"),
+        },
+        {
+          label: "Demo Video",
+          href: "https://www.loom.com/share/dd005ae4a69a447eb25c083c55cea330",
+          target: "_blank",
+          rel: "noopener noreferrer",
+          onClick: () => track("Smart KPI Dashboard Demo Video Click"),
+        },
+      ],
+      bullets: [
+        "Built an interactive Streamlit dashboard for CSV upload, schema detection, editable column mapping, KPI cards, and Plotly trend visualizations.",
+        "Implemented reusable KPI logic for revenue, orders, profit, margin, average order value, units sold, and average discount.",
+        "Added optional Claude-powered executive commentary with deterministic fallback insights for no-key demos.",
+        "Generated PDF exports with KPI cards, chart images, AI insights, and summary text using ReportLab and Kaleido.",
+      ],
+    },
+
 
     {
       title: "NBA Player Performance Analysis",

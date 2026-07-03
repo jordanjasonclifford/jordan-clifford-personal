@@ -16,6 +16,22 @@ function App() {
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
+    const cursorMediaQuery = window.matchMedia("(hover: hover) and (pointer: fine)");
+
+    function updateSnakeCursor(event) {
+      document.body.classList.toggle("snake-cursor", event.matches);
+    }
+
+    updateSnakeCursor(cursorMediaQuery);
+    cursorMediaQuery.addEventListener("change", updateSnakeCursor);
+
+    return () => {
+      cursorMediaQuery.removeEventListener("change", updateSnakeCursor);
+      document.body.classList.remove("snake-cursor");
+    };
+  }, []);
+
+  useEffect(() => {
     function handleScroll() {
       setScrolled(window.scrollY > 50);
     }

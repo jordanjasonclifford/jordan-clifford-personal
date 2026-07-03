@@ -8,17 +8,17 @@
 }
 @import "tailwindcss";
 
-body.snake-cursor,
-body.snake-cursor * {
-  cursor: url("/SnakeLogoCursorNew.png?v=2") 2 2, auto;
+@media (hover: hover) and (pointer: fine) {
+  body.snake-cursor,
+  body.snake-cursor * {
+    cursor: url("/SnakeLogoCursorNew.png?v=2") 2 2, auto;
+  }
+
+  body.snake-cursor a,
+  body.snake-cursor button {
+    cursor: url("/SnakeLogoCursorNew.png?v=2") 2 2, pointer;
+  }
 }
-
-body.snake-cursor a,
-body.snake-cursor button {
-  cursor: url("/SnakeLogoCursorNew.png?v=2") 2 2, pointer;
-}
-
-
 
 @layer utilities {
   .animate-in {
