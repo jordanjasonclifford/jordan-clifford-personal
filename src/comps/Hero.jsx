@@ -39,7 +39,7 @@ export default function Hero() {
 
         <div className="flex justify-center">
           <a
-            href="/JordanClifford_Resume.pdf"
+            href="/Jordan_Clifford_Resume_July.pdf"
             target="_blank"
             rel="noreferrer"
             className="px-5 py-2 sm:px-6 sm:py-2.5 text-xs sm:text-sm md:text-base font-mono rounded-md bg-orange-600 hover:bg-orange-500 transition tracking-wide"
