@@ -68,7 +68,7 @@ export default function Experience() {
   ];
 
   return (
-    <section id="experience" className="py-28 bg-[#6a3422] text-white">
+    <section id="experience" className="py-28 bg-[#6f2518] text-white">
       <div className="max-w-5xl mx-auto px-6">
         <h2 className="text-4xl font-bold mb-16 text-center">Experience</h2>
 

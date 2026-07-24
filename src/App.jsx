@@ -3,6 +3,7 @@ import Hero from "./comps/Hero";
 import AboutMe from "./comps/AboutMe";
 import Experience from "./comps/Experience";
 import Projects from "./comps/Projects";
+import MesaDivider from "./comps/MesaDivider";
 
 // import blah from "./components/Footer";
 import Footer from "./comps/Footer";
@@ -41,13 +42,16 @@ function App() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
   return (
-    <div className="min-h-screen bg-slate-950 text-white overflow-hidden">
+    <div className="min-h-screen bg-[#210b08] text-white overflow-hidden">
       <Navbar scrolled={scrolled} />
       <Analytics /> 
       <Hero />
       <AboutMe />
+      <MesaDivider from="#652914" to="#6f2518" />
       <Experience />
+      <MesaDivider from="#6f2518" to="#210b08" />
       <Projects />
+      <MesaDivider from="#210b08" to="#000000" />
       <Footer />
       
     </div>

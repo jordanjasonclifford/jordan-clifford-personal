@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <footer className="py-10 bg-black border-t border-orange-300/10 text-center text-base text-white">
+    <footer className="py-10 bg-black text-center text-base text-white">
       <img
         src="/jordancliffordwebsitelogo.png"
         alt="Jordan Clifford logo"

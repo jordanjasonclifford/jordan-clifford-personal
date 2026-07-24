@@ -4,7 +4,7 @@ export default function AboutMe() {
   return (
     <section
       id="aboutme"
-      className="py-24 bg-[#5c2d14] text-white font-mono"
+      className="py-24 bg-[#652914] text-white font-mono"
     >
       <div className="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
 

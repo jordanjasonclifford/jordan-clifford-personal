@@ -15,7 +15,7 @@ export default function Hero() {
       </video>
 
       {/* Warm mesa tint */}
-      <div className="absolute inset-0 bg-[#2a140f]/25"></div>
+      <div className="absolute inset-0 bg-[#652914]/30"></div>
 
       {/* Hero Badge Card */}
       <div
